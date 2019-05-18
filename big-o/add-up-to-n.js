@@ -3,7 +3,7 @@
 // destructure console.log function, because, why not?
 const { log } = console;
 
-// Solution 1
+// Solution 1 has as many operations as the number of n since it is in a loop there by making the big O notation O(n)
 const addUpTo_s1 = n => {
   let total = 0;
   for (let i = 1; i <= n; i++) {
@@ -12,7 +12,7 @@ const addUpTo_s1 = n => {
   return total;
 };
 
-// Solution 2
+// Solution 2 has only 3 operations, no matter the size of n, therefore the big O notation is O(1)
 const addUpTo_s2 = n => (n * (n + 1)) / 2;
 
 const start = Date.now();
